@@ -8,12 +8,15 @@ Endpoints describe API calls as types whose `Response` is checked by the compile
 - **Auth:** bearer-token injection, with a single-flight token refresh shared by concurrent 401s.
 - **Retries:** exponential backoff with jitter that honours `Retry-After`.
 - **Caching:** two-level caching with a TTL and an offline fallback.
-- **Interceptors:** request and response middleware.
-- **Logging:** redacted logs, plus URL loading metrics.
+- **Interceptors (optional):** add the same extra step to every call in one place, such as a request ID or a signature.
+- **Logging:** shows each call in the Xcode console with secrets like API keys and tokens hidden,
+  plus optional timing for each call.
 - **Errors:** one typed error surface, `NetworkError`.
 
 - iOS 16+ / macOS 13+, Swift 6 (strict concurrency), no third-party dependencies
 - Two products: `NetworkKit` (runtime) and `NetworkKitTesting` (mocks for your test targets)
+
+> **New to NetworkKit?** Start with the step-by-step [Getting Started guide](GETTING_STARTED.md).
 
 ## Installation
 

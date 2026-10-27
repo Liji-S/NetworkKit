@@ -8,6 +8,12 @@ All notable changes to this project are documented here. The format follows
 
 ### Added
 
+- `GETTING_STARTED.md`: a step-by-step guide to installing the package and calling an API.
+
+## [0.1.0] - 2026-10-28
+
+### Added
+
 - `Endpoint` protocol with typed `Response`, plus `RequestBody` (JSON, data, form, multipart) and `MultipartFormData`.
 - `NetworkClient` pipeline: environment resolution, request building, interceptors, validation, decoding.
 - `NetworkError`: one typed error surface for every failure.
